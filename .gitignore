@@ -1,0 +1,35 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# ── QuotaBar — NEVER commit config (contains API keys) ────────────────────────
+# The real config lives at ~/.quotabar/config.json (outside this repo)
+# If someone adds a local config.json here by mistake, block it:
+config.json
+*.env
+.env*
+secrets.*
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── py2app build output ───────────────────────────────────────────────────────
+dist/
+build/
+QuotaBar.app/
