@@ -359,6 +359,9 @@ class QuotaBarApp(rumps.App):
 
     def _menu_refresh(self, _=None):
         self.title = "⏳ Refreshing…"
+        # Reload config from disk so manual changes are reflected out-of-band
+        self._config = load_config()
+        self._providers = build_providers(self._config)
         self._trigger_fetch()
 
     def _toggle_provider(self, pid: str):
