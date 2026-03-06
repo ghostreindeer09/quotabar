@@ -37,30 +37,28 @@
 
 ## Installation
 
-### 1. Clone / download
+### Method 1: Quick Setup (For Everyone) ✨
+
+1. **Download the App:** Click the green **"Code"** button at the top of this page and select **"Download ZIP"**.
+2. **Extract:** Find the downloaded ZIP file in your Downloads folder and double-click it to extract the folder.
+3. **Install:** Open the extracted `quotabar-main` folder and simply **double-click** the `install.command` file.
+   - *Note: If your Mac says it cannot be opened because it is from an unidentified developer, right-click the file and select "Open".*
+4. **Done:** The script will handle everything automatically and launch QuotaBar!
+
+### Method 2: Developer Setup (Advanced)
+
+If you prefer using the terminal and managing your own virtual environment:
 
 ```bash
 git clone https://github.com/yourname/quotabar.git
 cd quotabar
-```
-
-### 2. Install dependencies
-
-```bash
-pip3 install -r requirements.txt
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+./run.sh
 ```
 
 > **Note:** Requires Python 3.11+ and macOS 12+.
-
-### 3. Run
-
-```bash
-./run.sh
-# or
-python3 app.py
-```
-
-The app will appear in your menu bar immediately.
 
 ---
 
